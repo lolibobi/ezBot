@@ -13,7 +13,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 @bot.event
 async def on_ready():
     print(f'Logged in as {bot.user.name}')
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="íà ÷ëåíå"))
+    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name="Ã­Ã  Ã·Ã«Ã¥Ã­Ã¥"))
 
     for filename in os.listdir('./cogs'):
         if filename.endswith('.py'):
@@ -23,4 +23,4 @@ async def on_ready():
 
     
 
-bot.run('MTEyNzg0NTg5Njg2NDkyMzY1OA.GPjOVh.04ku-AkoJpaji6nEcMa5vZSrtDoz5C_dVmRbXw')
+bot.run('TOKEN')
